@@ -53,7 +53,7 @@
     <section class="wrap" id="about">
       <div class="section-head"><div><div class="eyebrow">Why WingMan I/O</div><h2>Built to complement the WING workflow.</h2></div><p>The WING is powerful. WingMan I/O focuses on the visual context, documentation, and system-level clarity that can be hard to manage from the console alone.</p></div>
       <div class="story">
-        <p>WINGMAN I/O gives audio engineers a visual routing grid, live device topology map, friendly naming, color coding, quick edits, routing conflict warnings, and printable documentation so you can see what is connected, what is routed, and what might break before you touch it.</p>
+        <p>WINGMAN I/O gives audio engineers a visual routing grid, live device topology map, friendly naming, color coding, quick edits, routing conflict warnings, and printable documentation so you can see what is connected and what is routed.</p>
         <p>Instead of digging through console pages and guessing what AES50, StageConnect, local, USB, or stagebox ports are doing, WINGMAN I/O turns the whole system into a readable map.</p>
         <p>It is especially useful for real-world live sound setups where stageboxes, console routing, channel names, and output patches need to stay organized across rehearsals, shows, volunteers, and changing gear.</p>
       </div>
@@ -77,7 +77,35 @@
     </section>
 
     <section class="wrap" id="notify">
-      <div class="cta"><div><div class="eyebrow">Coming Soon</div><h2>Built by engineers who actually use the WING.</h2><p class="lead" style="font-size:18px;margin-top:18px">Get notified when WingMan I/O is ready for testing, screenshots, updates, and launch details.</p></div><form class="signup" action="mailto:crrecording@gmail.com?subject=WingMan%20I%2FO%20Notification%20Request" method="post" enctype="text/plain"><input type="email" name="email" placeholder="Enter your email address" aria-label="Email address" required><button type="submit">Notify Me</button></form></div>
+      <div class="cta"><div><div class="eyebrow">Coming Soon</div><h2>Built by engineers who actually use the WING.</h2><p class="lead" style="font-size:18px;margin-top:18px">Get notified when WingMan I/O is ready for testing, screenshots, updates, and launch details.</p></div>
+     <form class="signup" id="signupForm">
+  <input
+    type="email"
+    id="emailInput"
+    placeholder="Enter your email address"
+    aria-label="Email address"
+    required
+  >
+  <button type="submit">Notify Me</button>
+</form>
+
+<div id="signupMessage" style="margin-top:14px;color:#7de6ff;"></div>
+
+<script>
+const form = document.getElementById("signupForm");
+const emailInput = document.getElementById("emailInput");
+const signupMessage = document.getElementById("signupMessage");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  signupMessage.style.color = "#7de6ff";
+  signupMessage.textContent = "Submitting...";
+
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbxmZuwiXdH9-KtIcCM
+      </div>
     </section>
   </main>
 
