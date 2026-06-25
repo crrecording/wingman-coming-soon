@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="WingMan I/O">
+  <defs>
+    <radialGradient id="bg-glow" cx="34%" cy="22%" r="85%">
+      <stop offset="0" stop-color="#15365d"/>
+      <stop offset="0.42" stop-color="#09172b"/>
+      <stop offset="1" stop-color="#03060d"/>
+    </radialGradient>
+    <linearGradient id="io-blue" x1="130" x2="890" y1="240" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7db7ff"/>
+      <stop offset="0.48" stop-color="#4d8edb"/>
+      <stop offset="1" stop-color="#2e65ae"/>
+    </linearGradient>
+    <linearGradient id="io-shine" x1="190" x2="790" y1="220" y2="570" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="26" stdDeviation="30" flood-color="#000000" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#5e93d3" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="220" fill="url(#bg-glow)"/>
+  <path d="M126 826h454" stroke="#5e93d3" stroke-width="30" stroke-linecap="round" opacity="0.9"/>
+
+  <g filter="url(#soft-shadow)">
+    <path d="M136 280h74v310h-74z" fill="url(#io-blue)"/>
+    <path d="M424 246h72L298 630h-72z" fill="url(#io-blue)"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="url(#io-blue)" d="M636 274h158c68 0 122 54 122 122v74c0 68-54 122-122 122H636c-68 0-122-54-122-122v-74c0-68 54-122 122-122zm22 74c-36 0-64 28-64 64v42c0 36 28 64 64 64h114c36 0 64-28 64-64v-42c0-36-28-64-64-64H658z"/>
+    <path d="M136 280h74v310h-74z" fill="url(#io-shine)"/>
+    <path d="M424 246h72L298 630h-72z" fill="url(#io-shine)"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="url(#io-shine)" d="M636 274h158c68 0 122 54 122 122v74c0 68-54 122-122 122H636c-68 0-122-54-122-122v-74c0-68 54-122 122-122zm22 74c-36 0-64 28-64 64v42c0 36 28 64 64 64h114c36 0 64-28 64-64v-42c0-36-28-64-64-64H658z"/>
+  </g>
+</svg>
