@@ -1,1 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WingMan I/O Software License Agreement</title>
+    <meta name="description" content="Software License Agreement for WingMan I/O.">
+    <style>
+      :root {
+        --bg: #12141c;
+        --panel: #1e2230;
+        --border: #2d3345;
+        --text: #f5f7fb;
+        --muted: #aab2c5;
+        --link: #38bdf8;
+        --accent: #10b981;
+      }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      .site-header {
+        border-bottom: 1px solid var(--border);
+        background: rgba(18, 20, 28, 0.95);
+      }
+
+      .header-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 18px 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: var(--text);
+        line-height: 1.1;
+      }
+
+      .brand strong {
+        font-size: 1.05rem;
+        letter-spacing: 0.02em;
+      }
+
+      .brand span {
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 12px;
+        font-size: 0.92rem;
+      }
+
+      nav a,
+      footer a,
+      main a {
+        color: var(--link);
+        text-decoration: none;
+      }
+
+      nav a:hover,
+      footer a:hover,
+      main a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 44px 22px 72px;
+      }
+
+      .document {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 34px;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin: 0 0 18px;
+        letter-spacing: -0.03em;
+      }
+
+      h2 {
+        margin-top: 2.2rem;
+        padding-top: 1.35rem;
+        border-top: 1px solid var(--border);
+        font-size: 1.35rem;
+      }
+
+      h3 {
+        margin-top: 1.4rem;
+        font-size: 1.05rem;
+        color: var(--text);
+      }
+
+      p {
+        margin: 0.8rem 0;
+      }
+
+      ul {
+        padding-left: 1.35rem;
+      }
+
+      li {
+        margin: 0.35rem 0;
+      }
+
+      .meta {
+        color: var(--muted);
+        padding: 18px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.025);
+        margin-bottom: 2rem;
+      }
+
+      .notice {
+        margin: 0 0 20px;
+        padding: 14px 16px;
+        border-left: 4px solid var(--accent);
+        border-radius: 10px;
+        background: rgba(16, 185, 129, 0.08);
+        color: var(--muted);
+      }
+
+      footer {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 26px 22px 42px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      @media (max-width: 720px) {
+        .header-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        nav {
+          justify-content: flex-start;
+        }
+
+        .document {
+          padding: 24px 18px;
+          border-radius: 14px;
+        }
+      }
+
+      @media print {
+        body {
+          background: white;
+          color: black;
+        }
+
+        .site-header,
+        footer,
+        .notice {
+          display: none;
+        }
+
+        main {
+          padding: 0;
+          max-width: none;
+        }
+
+        .document {
+          border: 0;
+          box-shadow: none;
+          padding: 0;
+        }
+
+        a {
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <strong>WingMan I/O</strong>
+          <span>Routing Simplified</span>
+        </a>
+        <nav aria-label="Legal pages">
+          <a href="/">Home</a>
+          <a href="/software-license-agreement/">Software License Agreement</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/refund-policy/">Refund Policy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="document">
+        <p class="notice">This page is provided for customer review and product use. It is not a substitute for legal advice.</p>
+        <h1>WingMan I/O Software License Agreement</h1>
+
+<p class="meta">
+  <strong>Effective Date:</strong> June 25, 2026<br>
+  <strong>Product:</strong> WingMan I/O<br>
+  <strong>Website:</strong> <a href="https://wingmanio.com/">https://wingmanio.com/</a><br>
+  <strong>Seller:</strong> BrickHouse Productions LLC<br>
+  <strong>Contact:</strong> <a href="mailto:support@wingmanio.com">support@wingmanio.com</a>
+</p>
+
+<p>This Software License Agreement governs your use of WingMan I/O, a desktop software application for audio routing, patching, device mapping, Dante-related workflows, and I/O management for compatible digital audio systems.</p>
+
+<p>By downloading, installing, activating, purchasing, accessing, or using WingMan I/O, you agree to this Agreement. If you do not agree, do not install, activate, or use the software.</p>
+
+<h2>1. Parties</h2>
+<p>This Agreement is between you, the user or purchaser of WingMan I/O, and <strong>BrickHouse Productions LLC</strong>.</p>
+<p>WingMan I/O is the product name of the software.</p>
+<p>For questions, contact: <a href="mailto:support@wingmanio.com">support@wingmanio.com</a>.</p>
+
+<h2>2. License Grant</h2>
+<p>WingMan I/O is licensed, not sold.</p>
+<p>When you purchase a valid WingMan I/O license, you receive a limited, non-exclusive, non-transferable license to install and use the software according to this Agreement.</p>
+<p>A standard WingMan I/O license may be activated on up to <strong>two computers</strong> per purchased license.</p>
+<p>The license may be used by the person, company, church, venue, production company, or organization that purchased it, as long as the license is not used on more than the permitted number of activated computers.</p>
+
+<h2>3. License Type and Price</h2>
+<p>WingMan I/O is sold as a <strong>one-time purchase</strong>.</p>
+<p>The standard license price is <strong>$109 USD</strong>, unless otherwise stated on the official checkout page.</p>
+<p>Your purchase includes free updates while the software remains within the same main version number. For example, updates within the same major release family may be included. Future major upgrades may require a separate purchase.</p>
+
+<h2>4. License Activation and Transfer</h2>
+<p>WingMan I/O may require online activation and license validation.</p>
+<p>The software may communicate with Lemon Squeezy or related licensing services to validate your license, trial status, activation status, deactivation status, and update eligibility.</p>
+<p>WingMan I/O may use a machine ID, device identifier, or similar activation information to manage the two-computer activation limit.</p>
+<p>You may transfer a license from one computer to another by deactivating the license in the app and then activating it on another computer, subject to the license activation limit.</p>
+<p>You may not bypass, disable, modify, or interfere with license activation, license validation, trial limits, or copy-protection systems.</p>
+
+<h2>5. Trial Use</h2>
+<p>WingMan I/O offers a <strong>7-day free trial</strong>.</p>
+<p>The trial is full-featured and is intended to let users test the software before purchase. A license key or account is not required to download and try the software.</p>
+<p>When the trial period expires, the app may open in offline mode and ask you to activate a license. If the trial expires while the app is already open, the app may continue working until it is closed and reopened.</p>
+<p>Trial behavior may change in future versions.</p>
+
+<h2>6. Permitted Use</h2>
+<p>You may use WingMan I/O for lawful personal, professional, commercial, church, venue, rental, staging, installation, studio, and live production purposes.</p>
+<p>You are responsible for ensuring that your use of the software is appropriate for your equipment, network, console firmware, Dante configuration, operating system, and production environment.</p>
+
+<h2>7. Restrictions</h2>
+<p>You may not:</p>
+<ul>
+  <li>Use WingMan I/O on more computers than your license allows.</li>
+  <li>Copy, resell, sublicense, rent, lease, or redistribute the software or license key.</li>
+  <li>Share a license in a way that exceeds the permitted activation limit.</li>
+  <li>Reverse engineer, decompile, disassemble, modify, or create derivative works from the software except where permitted by law.</li>
+  <li>Bypass license activation, trial limits, security, or copy-protection systems.</li>
+  <li>Use WingMan I/O to interfere with third-party systems or violate the rights of others.</li>
+  <li>Remove copyright, trademark, license, or ownership notices from the software.</li>
+  <li>Use the WingMan I/O name, logo, design, interface, or software to create a confusingly similar product or service.</li>
+</ul>
+
+<h2>8. Ownership</h2>
+<p>WingMan I/O, including its software code, interface, design, artwork, graphics, routing logic, device profiles, documentation, branding, and related materials, is owned by BrickHouse Productions LLC or its licensors.</p>
+<p>This Agreement does not transfer ownership of WingMan I/O to you. It only gives you permission to use the software under the terms of this Agreement.</p>
+
+<h2>9. Desktop App Only</h2>
+<p>WingMan I/O is a desktop application for Windows and macOS.</p>
+<p>WingMan I/O is not a cloud-hosted service. The software may require internet access for license activation, license validation, and user-initiated update checks.</p>
+
+<h2>10. Routing, Dante, and Live Production Responsibility</h2>
+<p>WingMan I/O may view, edit, control, or assist with routing and patching settings on connected systems.</p>
+<p>This may include routing or patching workflows involving compatible digital consoles, AES50, StageConnect, USB, expansion card I/O, Dante-related devices, and other audio-system components.</p>
+<p>Because WingMan I/O can affect real audio routing, you are solely responsible for:</p>
+<ul>
+  <li>Verifying all routing before use.</li>
+  <li>Confirming patching and signal flow before live events.</li>
+  <li>Maintaining backups of show files, console scenes, and important configurations.</li>
+  <li>Testing the software in your own environment before relying on it in production.</li>
+  <li>Understanding the result of any routing, patching, or device changes before applying them.</li>
+  <li>Avoiding live show changes unless you understand the risk and result.</li>
+  <li>Maintaining a backup plan in case of software, network, console, or device failure.</li>
+</ul>
+<p>WingMan I/O should not be treated as a substitute for professional judgment, proper system verification, backup procedures, or live production best practices.</p>
+
+<h2>11. Local Project Files and Configuration Data</h2>
+<p>WingMan I/O may save project files, routing data, labels, device names, console IP addresses, device information, topology data, Dante-related configuration information, and other workflow data locally on your computer.</p>
+<p>You are responsible for managing, backing up, protecting, and verifying your own project files and configurations.</p>
+
+<h2>12. No Affiliation With Third Parties</h2>
+<p>WingMan I/O is an independent software product.</p>
+<p>WingMan I/O is not affiliated with, endorsed by, sponsored by, or officially approved by:</p>
+<ul>
+  <li>Behringer</li>
+  <li>Music Tribe</li>
+  <li>Midas</li>
+  <li>Klark Teknik</li>
+  <li>Audinate</li>
+  <li>Dante</li>
+  <li>Apple</li>
+  <li>Microsoft</li>
+</ul>
+<p>All third-party names, trademarks, product names, and logos belong to their respective owners and are used only for identification, compatibility, or descriptive purposes.</p>
+
+<h2>13. Compatibility</h2>
+<p>WingMan I/O is designed to work with certain hardware, firmware versions, operating systems, network configurations, and third-party technologies.</p>
+<p>Compatibility may vary based on device firmware, operating system updates, firewall settings, network settings, Dante configuration, driver changes, manufacturer changes, licensing status, or other factors outside the control of BrickHouse Productions LLC.</p>
+<p>We may update WingMan I/O to improve compatibility, but we do not guarantee compatibility with every device, firmware version, operating system version, network configuration, or production scenario.</p>
+
+<h2>14. Updates</h2>
+<p>Your license includes free updates while the software remains within the same main version number.</p>
+<p>Future major versions, major upgrades, separately branded editions, or expanded paid features may require an additional purchase.</p>
+<p>Updates may modify, add, remove, or change features.</p>
+
+<h2>15. Support</h2>
+<p>Support is provided by email at: <a href="mailto:support@wingmanio.com">support@wingmanio.com</a>.</p>
+<p>Support is provided at our discretion. We do not guarantee response times, availability during live events, or resolution of every issue.</p>
+
+<h2>16. Refunds</h2>
+<p>Refunds are governed by the WingMan I/O Refund Policy:</p>
+<p><a href="https://wingmanio.com/refund-policy/">https://wingmanio.com/refund-policy/</a></p>
+
+<h2>17. Privacy</h2>
+<p>Use of WingMan I/O may involve license activation, machine identification, support communications, update checks, and related data handling.</p>
+<p>Please review the WingMan I/O Privacy Policy:</p>
+<p><a href="https://wingmanio.com/privacy-policy/">https://wingmanio.com/privacy-policy/</a></p>
+
+<h2>18. No Warranty</h2>
+<p>WingMan I/O is provided “as is” and “as available.”</p>
+<p>To the maximum extent permitted by law, BrickHouse Productions LLC disclaims all warranties, express or implied, including warranties of merchantability, fitness for a particular purpose, non-infringement, uninterrupted operation, error-free performance, and compatibility with all systems.</p>
+<p>You use WingMan I/O at your own risk.</p>
+
+<h2>19. Limitation of Liability</h2>
+<p>To the maximum extent permitted by law, BrickHouse Productions LLC, WingMan I/O, its owners, developers, contractors, affiliates, or licensors will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages.</p>
+<p>This includes, but is not limited to:</p>
+<ul>
+  <li>Lost audio</li>
+  <li>Incorrect routing</li>
+  <li>Show failure</li>
+  <li>Missed cues</li>
+  <li>Lost revenue</li>
+  <li>Lost profits</li>
+  <li>Lost business opportunities</li>
+  <li>Equipment misconfiguration</li>
+  <li>Damaged or incorrect show files</li>
+  <li>Production delays</li>
+  <li>Data loss</li>
+  <li>Damage to reputation</li>
+  <li>Costs of substitute services</li>
+  <li>Any damages resulting from use or inability to use the software</li>
+</ul>
+<p>To the maximum extent permitted by law, the total liability of BrickHouse Productions LLC for any claim related to WingMan I/O will not exceed the amount you paid for the software license.</p>
+
+<h2>20. Termination</h2>
+<p>This Agreement remains in effect until terminated.</p>
+<p>Your rights under this Agreement terminate automatically if you violate the license terms, exceed the activation limit, attempt to bypass license activation, distribute unauthorized copies, or misuse the software.</p>
+<p>Upon termination, you must stop using WingMan I/O and uninstall or delete all copies in your possession.</p>
+
+<h2>21. Governing Law</h2>
+<p>This Agreement is governed by the laws of the State of Tennessee, United States, without regard to conflict-of-law principles, unless applicable law requires otherwise.</p>
+
+<h2>22. Changes to This Agreement</h2>
+<p>We may update this Agreement from time to time. Updated terms will be posted on the WingMan I/O website with a revised effective date.</p>
+<p>Continued use of WingMan I/O after updated terms are posted means you accept the updated terms.</p>
+
+<h2>23. Contact</h2>
+<p>For questions about this Agreement, contact:</p>
+<p>
+  <strong>BrickHouse Productions LLC</strong><br>
+  <strong>Email:</strong> <a href="mailto:support@wingmanio.com">support@wingmanio.com</a><br>
+  <strong>Website:</strong> <a href="https://wingmanio.com/">https://wingmanio.com/</a>
+</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/software-license-agreement/">Software License Agreement</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/refund-policy/">Refund Policy</a>
+      </div>
+      <div>&copy; 2026 BrickHouse Productions LLC. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
